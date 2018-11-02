@@ -1,0 +1,315 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 640px) {
+
+  .container {
+    width: 100%;
+    padding: 0px 5px;
+  }
+
+  .container-1 {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+
+
+.double-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.header-home {
+  width:100%;
+  height: 250px;
+}
+
+  .header-content {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-content h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+
+  .header-content h2 {
+    font-size: 20px;
+    margin:0
+  }
+
+  .header-content .btn-header {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+
+  .sous-titre h2 {
+    margin-top: 0px;
+    font-size: 30px;
+  }
+
+/*LE CONCEPT*/
+.container {
+  width: 100%;
+}
+
+.container .contenu-concept {
+  width: 97%;
+height: 500px;
+margin: 0px;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+}
+
+.contenu-concept .titre-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%
+}
+
+.titre-text .text-concept {
+  font-size: 12px;
+  width: 350px;
+}
+
+.titre-text .titre-concept {
+  font-size:20px;
+  padding: 10px;
+    padding-top: 0px;
+    width: 310px;
+    font-weight: 500;
+}
+
+.contenu-concept .img-concept {
+  width: 100%;
+  height: 40% ;
+  padding-top: 0px;
+}
+
+/*LES 3 PRODUITS*/
+
+.contenu-cozmo {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80%;
+  margin-top: 300px;
+}
+
+.img-cozmo {
+  width: 350px;
+  height: 300px;
+  margin-left: 40px;
+}
+
+.produits {
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 300px;
+}
+
+.produits h3 {
+  text-align: center;
+}
+
+.produits .text {
+  text-align: center;
+}
+
+.prix-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.prix-cta .prix {
+  margin-bottom: 20px;
+}
+
+.prix-cta .btn-cozmo {
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cta-shpero .prix {
+  margin-bottom: 20px;
+}
+
+.fa-heart::before { /*icone du coeur*/
+  margin-right:0px
+}
+
+/*--------------------------------*/
+/*SPHERO MINI*/
+
+.contenu-sphero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.contenu-sphero .img-sphero{
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+
+.produit-sphero .text {
+  text-align: center;
+}
+.contenu-sphero .produit-sphero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:300px;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+
+.produit-sphero .cta-shpero {
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-sphero {
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.coeur-sphero {
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+/*Contenu Lego*/
+
+.contenu-lego {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 80%;
+  margin-top: 240px;
+}
+
+.contenu-lego .img-lego {
+  margin-left: 80px;
+}
+
+.btn-lego {
+  width: 200px;
+  text-align: center;
+  font-size: 16px ;
+}
+
+/*-----------------------------------*/
+/*BANDE PROMOTIONNEL*/
+
+.bande-promo  {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.bande-promo .contenu-dash {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.contenu-dash h3 {
+  text-align: center;
+  font-size: 24px;
+  padding: 0;
+}
+
+.contenu-dash h4 {
+  text-align: center;
+  font-size: 16px;
+}
+
+.contenu-dash p {
+  font-size: 16px;
+}
+
+.contenu-dash .cta-prix-dash {
+  display: flex;
+  flex-direction:column-reverse;
+  text-align: center;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.cta-prix-dash .btn-dash {
+  padding: 15px 15px;
+  width: 280px;
+}
+
+.bande-promo .div-img-dash {
+  margin: 0;
+}
+
+.div-img-dash .img-dash{
+  width:200px;
+}
+/*LES AVANTAGES*/
+
+.div-avantages {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  margin:auto;
+}
+
+.avantages .logo-jouissif {
+  margin-top: 50px;
+}
+
+/*FOOTER*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.div-text-footer {
+  padding: 0;
+  font-size: 16px;
+}
+
+.sous-titre {
+  margin-bottom: 0
+}
+footer {
+  margin-top: 0
+}
+}

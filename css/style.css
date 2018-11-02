@@ -1,0 +1,707 @@
+/*
+Main color : #9A7197
+Font-families :
+- 'Open Sans': 300,400,600,700,800
+- 'Montserrat': 300,400,500,600,700,800,900
+*/
+/* ------RESET------ */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, abbr, address, code, em, img, small, strike, strong, sub, sup, b, u, i, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, nav, section
+
+/* ,ol, ul, li */
+  {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  background-color: #eff2f5;
+}
+
+::-moz-selection {
+  color: white;
+  background: #222e40;
+}
+
+::selection {
+  color: white;
+  background: #222e40;
+}
+
+/* ------TYPOGRAPHY------ */
+/* Texts */
+p {
+  margin-bottom: 5px;
+  text-align: none;
+  font-family: "Roboto"
+}
+
+/* Links */
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: 'Oswald';
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-family: 'Oswald';
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+/*CONTAINEUR DU HEADER*/
+.container-1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px;
+  /*fait appel a la class du nav et containeur*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*sépare les éléments entre eux*/
+}
+
+/*CONTAINEUR DES SECTIONS*/
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
+}
+
+.double-menu {
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  margin-left: 20px;
+}
+
+/*OMBRES POUR LES BOITES*/
+.shadow-1 {
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+}
+
+.menu-principal {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #0e4b79;
+  /*#2baacd*/
+  font-family: 'Oswald';
+  z-index: 9999;
+}
+
+.detail-logo {
+  width: 83px;
+  /*taille du logo kid code */
+}
+
+.menu-principal ul {
+  padding: 0px;
+  /* marge intérieur du menu "ul" */
+  margin: 0px;
+  /* marge exterieur du menu ul */
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-principal ul li {
+  display: inline-block; /*aligne les élément li les uns à coté des autres*/
+  padding: 30px;
+}
+
+.menu-principal ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+.menu-left a:hover {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.menu-right a:hover {
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.menu-left .homes{
+  font-size:25px;
+  color: #faa23e;
+}
+
+.menu-right .recherche {
+  font-size: 25px;
+  color: #fff;
+}
+
+.header-home {
+  background:  url("../img/header.png");
+  padding-top: 95px;
+  height: 85vh;
+  background-size: 100%;/*cela prend 100% de la page*/background-repeat: no-repeat;
+  /*ne duplique pas l'images*/
+  background-position: center;
+  /*centre l'image */
+}
+
+.header-content h1 {
+  color: #fff;
+  margin: 50px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px -1px 6px #14131c;
+}
+
+.header-content h2 {
+  padding: 0px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px -1px 6px #14131c;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 450px;
+}
+
+.btn-header {
+  text-decoration: none;
+  background-color: none;
+  color: #f7f2f2;
+  font-size: 30px;
+  font-family: 'Oswald';
+  border: 1px solid black;
+  padding: 5px 30px;
+  /*#0097a5*/
+  background-color: #0e4b79;
+  box-shadow: 0 4 4px 0px rgba(0, 0, 0, 0.19);
+}
+
+.sous-titre {
+  /*SOUS TITRE H2 */
+  margin-top: 80px;
+  margin-bottom: 90px;
+  font-family: 'Oswald';
+  text-align: center;
+  color: #0097a5;
+  font-weight: 400;
+}
+
+.sous-titre h2 {
+  font-size: 40px;
+}
+
+.sous-titre2 {
+  margin-top: 120px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #0097a5;
+  text-align: center;
+  color: #0097a5;
+  font-weight: 40 0;
+  text-shadow: 5 -4px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contenu-concept {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 60px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.19);
+}
+
+.titre-text {
+  padding: 30px;
+  padding-top: 25px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-concept {
+  padding: 50px;
+  padding-top: 110px;
+  width: 50%;
+  height: 60%;
+}
+
+.titre-text .titre-concept {
+  padding: 10px;
+  padding-top: 20px;
+  color: #fdaa1a;
+  font-family: 'Oswald';
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.titre-text .text-concept {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 400;
+  padding: 10px;
+  padding-top: 0px;
+  color: #0097a5;
+  font-family:'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*LES PRODUITS*/
+.contenu-cozmo {
+  display: flex;
+  flex-direction: row-reverse;
+  /*place l'élément de droite à gauche*/
+  justify-content: space-between;
+  width: 95%;
+  height: 450px;
+  margin-top: 180px;
+}
+
+/*CLASS DES DIV CONTENANT LE CONTENU DES SECTIONS DES PRODUITS*/
+.produits {
+  padding: 50px;
+  margin-top: 0px;
+  width: 45%;
+  font-size: 16px;
+  padding: 0px;
+}
+
+.produit-sphero {
+  padding: 50px;
+  margin-top: 0px;
+  width: 45%;
+  font-size: 16px;
+  margin-left: 70px;
+}
+
+.produit-sphero h3{
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  color: #fdaa1a;
+}
+
+
+/*Paragraphe du text de cozmo*/
+.text {
+  color: #333;
+  font-family: 'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.produits h3 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+  color: #fdaa1a;
+}
+
+.img-cozmo{
+  width: 410px;
+  height: 330px;
+  margin-left: 70px;
+}
+
+.img-sphero {
+  width:380px;
+  height: 380px;
+  margin-right: 100px;
+}
+
+.sphero-coeur {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.prix {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size:25px;
+  color:#333;
+}
+
+/*DIV CONTENANT LE PRIX ET LE CALL TO ACTION DE COZMO*/
+.prix-cta {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    float: left;
+    margin-right: 140px;
+  }
+
+  .coeur {
+    margin-top: 10px;
+    right: 0px;
+    font-size: 30px;
+    color: #0e4b79;
+  }
+
+.btn-cozmo {
+  text-decoration: none;
+  border: 1px solid #29b1fd;
+  background-color: #0e4b79;
+  color: #f7f2f2;
+  font-size: 12px;
+  margin-left: 0px;
+  padding: 15px 50px;
+}
+
+/*PRODUIT 2*/
+.contenu-sphero {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: none;
+  margin-left: auto;
+}
+
+.cta-shpero {
+  display: flex;
+  margin-right: auto;
+  margin-top: 50px;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  }
+
+.btn-sphero {
+  margin-right: 20px;
+  text-decoration: none;
+  border: 1px solid #29b1fd;
+  background-color: #0e4b79;
+  color: #f7f2f2;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 15px 50px;
+}
+
+
+
+.coeur-sphero {
+  margin-top: 10px;
+  margin-right: -115px;
+  font-size: 30px;
+  color: #0e4b79;
+}
+
+.contenu-lego {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  /*place l'élément de droite à gauche*/
+  width: 100%;
+  height: 450px;
+  margin-top: 130px;
+}
+
+/*DIV CONTENANT LE PRIX ET LE CALL TO ACTION DE COZMO*/
+
+.btn-lego {
+  text-decoration: none;
+  border: 1px solid #29b1fd;
+  background-color: #0e4b79;
+  color: #f7f2f2;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left:0px;
+  padding: 15px 50px;
+}
+
+.img-lego {
+    width: 200px;
+    height: 350px;
+}
+
+.bande-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: auto;
+  background-color: #0e4b79;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 5, 0.5);
+}
+
+
+/*BANDE PROMOTIONNEL*/
+/*BANDE PROMOTIONNEL*/
+/*BANDE PROMOTIONNEL*/
+
+.section-dash {
+  width: 100%;
+}
+
+.bande-promo {
+  justify-content: space-around;
+  display: flex;
+}
+.contenu-dash {
+  width:600px;
+  padding-left:50px;
+  padding-top:20px;
+}
+
+.contenu-dash h3 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  color: #fdaa1a;
+}
+
+.contenu-dash h4 {
+  color: #f7f7f7;
+}
+
+.contenu-dash p {
+  color: #f7f7f7;
+  font-family: 'Roboto'
+}
+
+/*DIV PRIX ET CTA BANDE PROMO*/
+.cta-prix-dash {
+  flex-direction: row;
+  display: flex;
+  margin-top: 50px;
+}
+/*DIV PRIX ET CTA BANDE PROMO*/
+.btn-dash {
+  text-decoration: none;
+  border: 1px solid #fdaa1a;
+  background-color: #fdaa1a;
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 19px 80px;
+}
+
+/*DIV DE L'IMAGE DASH*/
+.div-img-dash {
+  margin: 40px;
+}
+
+.img-dash {
+  width:480px;
+}
+
+.prix-ancien {
+  font-size: 14px;
+  margin-left: 0px;
+  text-decoration: line-through;
+}
+
+/*LES 2 PRIX D*/
+.prix-dash {
+  margin-left: 20px;
+  font-size:22px;
+}
+
+/*LES AVANTAGES*/
+.sous-titre h3{
+font-size: 2.2rem;
+font-weight: 400;
+}
+
+.div-avantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.div-avantages {
+  width: 100%;
+}
+
+.logo-avantages {
+  width: 150px;
+}
+
+.logo-educatif {
+  width: 230px;
+}
+
+.logo-intuitif {
+  margin-top: 15px;
+}
+
+/*Effet de survol*/
+.img-avantages:hover{
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.text-avantages {
+  font-size:12px;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+
+/*FOOTER*/
+.footer1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-text-footer {
+    font-family: 'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: #a6c1d6; /*#*/
+    padding: 70px;
+}
+
+.text-footer {
+  padding: 50px;
+  color: #2b2b2d;
+}
+
+.hrtop .containeur-1 {
+    border-top: #000 solid 2px;
+    background: none;
+    margin-top: 45px;
+}
+
+.hrbottom {
+  border-bottom: #000 solid 2px;
+
+}
+
+hr {
+  border-bottom: #000 solid 2px;
+  border-top: #aaa solid 1px;
+  height: 1px;
+  background: none;
+  z-index: 1px;
+}
+
+/* FORMULAIRE*/
+.contact {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background-color: #c4d3de;
+  padding: 50px;
+}
+
+form, h5 {
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+}
+
+.service-client {
+  font-size: 15px;
+}
+
+.service-client h5 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.service-client ul {
+  padding-left: 1px;
+}
+.service-client ul li {
+  list-style-type: none;
+}
+
+.service-client ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*DIV INFORMATIONS*/
+.informations ul{
+  padding-left: 1px;
+}
+
+.informations h5 a {
+  text-decoration: none;
+}
+
+.informations ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.informations ul li {
+  list-style-type: none;
+}
+
+/*MENTIONS LEGALES*/
+
+.footer-3 {
+  background-color: #0e4b79;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-3 ul{
+  list-style-type: none;
+}
+
+.footer-3 ul li {
+  display: inline-block;
+}
+
+.footer-3 ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 80px;
+  font-size: 12px;
+  font-family: "Roboto"
+}
+
+.top-page a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: "Roboto";
+  padding: 15px;
+}
