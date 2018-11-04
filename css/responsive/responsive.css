@@ -4,40 +4,72 @@
   .container {
     width: 100%;
     padding: 0px 5px;
+    margin-top: 85px;
   }
 
   .container-1 {
     width: 100%;
-  }
+    margin-top: -15px
+   }
 
   body {
     width: 100%;
   }
 
-
 .double-menu {
   display: none;
-  cursor: pointer;
 }
+
+.cart {
+  display: block;
+  padding:0px;
+  padding-top: 30px;
+  font-size: 25px;
+  color: #f7f7f7;
+  margin-right: 20px;
+}
+
+.user {
+  font-size: 25px;
+  color: #f7f7f7;
+  padding-top: 30px;
+  margin-right: 20px;
+}
+
+.recherche {
+  display: block;
+  padding:20px;
+  padding-top: 30px;
+  font-size: 25px;
+  margin-left: 80px;
+  color: #f7f7f7;
+}
+
+
+.container-1 .detail-logo {
+  width: 90px;
+  margin-left: 10px;
+}
+
+
 
 .header-home {
   width:100%;
   height: 250px;
 }
 
-  .header-content {
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.header-content {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   }
 
   .header-content h1 {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .header-content h2 {
@@ -50,6 +82,10 @@
     padding: 5px 10px;
   }
 
+  .sous-titre1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
   .sous-titre h2 {
     margin-top: 0px;
     font-size: 30px;
@@ -74,20 +110,22 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%
+  width: 100%;
+  margin:0px;
+  padding: 0px;
 }
 
 .titre-text .text-concept {
-  font-size: 12px;
+  font-size: 16px;
   width: 350px;
 }
 
 .titre-text .titre-concept {
-  font-size:20px;
+  font-size:24px;
   padding: 10px;
-    padding-top: 0px;
+    padding-top: 10px;
     width: 310px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .contenu-concept .img-concept {
@@ -230,9 +268,11 @@ align-items: center;
 .bande-promo  {
   margin-top: 150px;
   width: 100%;
+  height: 410px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  justify-content: space-around;
 }
 
 .bande-promo .contenu-dash {
@@ -246,30 +286,33 @@ align-items: center;
 
 .contenu-dash h3 {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   padding: 0;
 }
 
 .contenu-dash h4 {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .contenu-dash p {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .contenu-dash .cta-prix-dash {
   display: flex;
-  flex-direction:column-reverse;
+  flex-direction:row;
   text-align: center;
-  width: 300px;
   margin-top: 10px;
 }
 
+.cta-prix-dash .prix-dash {
+
+}
 .cta-prix-dash .btn-dash {
-  padding: 15px 15px;
-  width: 280px;
+  padding: 10px 15px;
+  width: 185px;
 }
 
 .bande-promo .div-img-dash {
@@ -277,14 +320,18 @@ align-items: center;
 }
 
 .div-img-dash .img-dash{
-  width:200px;
+  width:250px;
 }
 /*LES AVANTAGES*/
+
+.sous-titre h2 {
+  margin-bottom: 0;
+}
 
 .div-avantages {
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:space-around;
   align-items: center;
   margin:auto;
 }
@@ -294,8 +341,17 @@ align-items: center;
 }
 
 /*FOOTER*/
+.formulaire {
+  width: 100%;
+}
+
+#champ-mail {
+  width: 80%;
+}
 
 .contact {
+  text-align: ;
+  padding:10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -309,6 +365,34 @@ align-items: center;
 .sous-titre {
   margin-bottom: 0
 }
+
+.div-text-footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.custom-form {
+  text-align: center;
+}
+
+.footer-3 .mentions-legales {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.mentions-legales ul {
+  padding:0px;
+}
+
+.mentions-legales .c {
+  margin-left: 75px;
+  padding:0
+}
+
+.top-page {
+display: none}
 footer {
   margin-top: 0
 }

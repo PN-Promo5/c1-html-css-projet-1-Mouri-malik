@@ -32,8 +32,6 @@ body {
   background: #222e40;
 }
 
-/* ------TYPOGRAPHY------ */
-/* Texts */
 p {
   margin-bottom: 5px;
   text-align: none;
@@ -123,6 +121,7 @@ h6 {
   z-index: 9999;
 }
 
+
 .detail-logo {
   width: 83px;
   /*taille du logo kid code */
@@ -147,7 +146,17 @@ h6 {
   color: #fff;
 }
 
+.cart {
+  color: #0e4b79
+}
 
+.user {
+  color:#0e4b79;
+}
+
+.recherche {
+  color: #0e4b79;
+}
 
 .menu-left a:hover {
   opacity: 0.4;
@@ -228,6 +237,7 @@ h6 {
 
 .sous-titre h2 {
   font-size: 40px;
+  color: #0e4b79;
 }
 
 .sous-titre2 {
@@ -244,7 +254,7 @@ h6 {
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 500px;
+  height: 420px;
   margin-top: 100px;
   margin-left: 60px;
   background-color: #f7f7f7;
@@ -252,18 +262,18 @@ h6 {
 }
 
 .titre-text {
-  padding: 30px;
-  padding-top: 25px;
+  margin: 50px;
+  padding: 24px;
   width: 40%;
   display: flex;
   flex-direction: column;
 }
 
 .img-concept {
-  padding: 50px;
-  padding-top: 110px;
-  width: 50%;
-  height: 60%;
+  margin: 50px;
+  margin-top: 90px;
+  width: 450px;
+  height: 250px;
 }
 
 .titre-text .titre-concept {
@@ -281,7 +291,7 @@ h6 {
   font-weight: 400;
   padding: 10px;
   padding-top: 0px;
-  color: #0097a5;
+  color: #0291b1;
   font-family:'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -362,7 +372,7 @@ h6 {
 .prix-cta {
   display: flex;
   margin-top: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .fa-heart:before {
@@ -383,7 +393,7 @@ h6 {
   border: 1px solid #29b1fd;
   background-color: #0e4b79;
   color: #f7f2f2;
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 0px;
   padding: 15px 50px;
 }
@@ -411,9 +421,10 @@ h6 {
   border: 1px solid #29b1fd;
   background-color: #0e4b79;
   color: #f7f2f2;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   padding: 15px 50px;
+  letter-spacing: 1px;
 }
 
 
@@ -442,13 +453,15 @@ h6 {
   border: 1px solid #29b1fd;
   background-color: #0e4b79;
   color: #f7f2f2;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   margin-left:0px;
   padding: 15px 50px;
+  letter-spacing: 1px
 }
 
 .img-lego {
+  margin
     width: 200px;
     height: 350px;
 }
@@ -458,18 +471,14 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 400px;
+  height: 350px;
   margin-top: 50px;
   margin-left: auto;
   background-color: #0e4b79;
   box-shadow: 0 0 10px 1px rgba(0, 0, 5, 0.5);
 }
 
-
 /*BANDE PROMOTIONNEL*/
-/*BANDE PROMOTIONNEL*/
-/*BANDE PROMOTIONNEL*/
-
 .section-dash {
   width: 100%;
 }
@@ -481,7 +490,7 @@ h6 {
 .contenu-dash {
   width:600px;
   padding-left:50px;
-  padding-top:20px;
+  padding-top:40px;
 }
 
 .contenu-dash h3 {
@@ -509,13 +518,17 @@ h6 {
 /*DIV PRIX ET CTA BANDE PROMO*/
 .btn-dash {
   text-decoration: none;
-  border: 1px solid #fdaa1a;
+  border: 2px solid #fdaa1a;
   background-color: #fdaa1a;
-  color: #f7f7f7;
-  font-size: 14px;
+  color: #fff;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 1px;
-  padding: 19px 80px;
+  letter-spacing: 2px;
+  padding: 15px 80px;
+}
+
+.btn-dash:hover {
+  background-color: #0e4b79;
 }
 
 /*DIV DE L'IMAGE DASH*/
@@ -524,7 +537,7 @@ h6 {
 }
 
 .img-dash {
-  width:480px;
+  width:430px;
 }
 
 .prix-ancien {
@@ -549,36 +562,38 @@ font-weight: 400;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
 }
+
 .div-avantages {
   width: 100%;
 }
 
 .logo-avantages {
-  width: 150px;
+  width: 100px;
 }
 
-.logo-educatif {
-  width: 230px;
+.avantages h5  {
+  text-align: center;
+  color: #0e4b79;
+  font-family: "lemon";
+  font-size: 30px;
 }
 
-.logo-intuitif {
-  margin-top: 15px;
+.educatif {
+  margin-top: 10px;
 }
 
 /*Effet de survol*/
-.img-avantages:hover{
-  transform: scale(1.2);
+.logo-avantages:hover{
+  transform: scale(1.3);
   transition: 0.3s ease-in-out;
 }
 
 .text-avantages {
   font-size:12px;
   font-weight: 500;
-  font-family: "Roboto";
+  font-family: "";
 }
-
 
 /*FOOTER*/
 .footer1 {
@@ -587,15 +602,12 @@ font-weight: 400;
 }
 
 .div-text-footer {
-    font-family: 'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    text-align: center;
-    background-color: #a6c1d6; /*#*/
-    padding: 70px;
-}
-
-.text-footer {
-  padding: 50px;
-  color: #2b2b2d;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  font-family: 'Avenir Black', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: ##eff2f5;
+  padding: 40px;
 }
 
 .hrtop .containeur-1 {
@@ -606,7 +618,6 @@ font-weight: 400;
 
 .hrbottom {
   border-bottom: #000 solid 2px;
-
 }
 
 hr {
@@ -614,6 +625,7 @@ hr {
   border-top: #aaa solid 1px;
   height: 1px;
   background: none;
+  background-color: ;
   z-index: 1px;
 }
 
@@ -622,8 +634,37 @@ hr {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  background-color: #c4d3de;
+  background-color: #a6c1d6;
   padding: 50px;
+}
+
+.formulaire {
+  text-align: center
+}
+
+.m-nav-toggle {
+  width: 40px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+span.m-toggle-icon, span.m-toogle-icon:before, span.m-toogle-icon:after {
+  content: "0";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: none;
+}
+
+
+
+#champ-mail {
+  width: 400px;
+  height: 30px;
 }
 
 form, h5 {
@@ -632,10 +673,12 @@ form, h5 {
 
 textarea {
   resize: none;
+  font-family: 'roboto';
 }
 
 .service-client {
   font-size: 15px;
+  margin-top: 1px;
 }
 
 .service-client h5 a {
@@ -656,12 +699,17 @@ textarea {
 }
 
 /*DIV INFORMATIONS*/
+
+.informations h5 a {
+  text-decoration: none;
+}
+
 .informations ul{
   padding-left: 1px;
 }
 
-.informations h5 a {
-  text-decoration: none;
+.informations ul li {
+  list-style-type: none;
 }
 
 .informations ul li a {
@@ -670,12 +718,22 @@ textarea {
   font-size: 15px;
 }
 
-.informations ul li {
+.buy ul {
+  padding-left: 1px;
+
+}
+
+.buy ul li {
   list-style-type: none;
+
+}
+.buy ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
 }
 
 /*MENTIONS LEGALES*/
-
 .footer-3 {
   background-color: #0e4b79;
   display: flex;
@@ -699,6 +757,14 @@ textarea {
 }
 
 .top-page a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: "Roboto";
+  padding: 15px;
+}
+
+.c {
   text-decoration: none;
   color: white;
   font-size: 12px;

@@ -18,6 +18,11 @@
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
 
 </head>
 
@@ -34,25 +39,38 @@
   <nav class="menu-principal shadow-1">
     <!-- création du menu -->
 
+
     <div class="container-1">
+
       <a href="#"><img src="img/logo.png" alt="logo" class="detail-logo"></a><!-- logo kid code -->
-    <div class="double-menu">
-      <ul class="menu-left">
+      <a href="#"><i class="fas fa-search recherche"></i></a>
+
+      <i class="fas fa-user-circle user"></i>
+
+      <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+
+
+      <div class="double-menu">
+        <ul class="menu-left">
+
         <li><a href="#"><i class="fas fa-home homes"></i></a></li>
         <li><a href="#">Produits</a></li>
         <li><a href="#">Nouveautés</a></li>
-        <li><a href="#">Les avantages</a></li>
+
       </ul>
 
       <ul class="menu-right">
         <li><a href="#"><i class="fas fa-search recherche"></i></a></li>
+
         <li><a href="#" class="connexion">Se connecter</a></li>
+
         <li><a href="#" class="panier">Panier</a></li>
       </ul>
     </div>
+
     </div>
   </nav>
-  <div class="sous-titre">
+  <div class="sous-titre sous-titre1">
   <h2>Des robots-jouets pour apprendre à programmer</h2>
   </div>
 
@@ -144,18 +162,21 @@
 
     <section class="container">
       <div class="div-avantages">
-        <article class="avantages">
+        <article class="avantages educatif">
 
-          <img src="img/educatif.png" alt="#" class="logo-avantages logo-educatif">
-
+          <img src="img/educatif.png" alt="#" class="logo-avantages">
+          <h5>Educatif</h5>
+          <p></p>
 
         </article>
         <article class="avantages">
           <img src="img/ludique.png" alt="#" class="logo-avantages">
+          <h5> Ludique</h5>
         </article>
 
         <article class="avantages">
-          <img src="img/intuitif.png" alt="#" class="logo-avantages logo-intuitif">
+          <img src="img/intuitif.png" alt="#" class="logo-avantages">
+          <h5>Intuitif</h5>
 
           </div>
         </article>
@@ -164,70 +185,79 @@
 
   <footer>
     <div class="contact">
-
       <div class="formulaire">
     <form class="custom-form" action="#" method="post">
-      <h5>Vous rencontrez un problème? <br>Faites une réclamation:</h5>
+      <h5>INSCRIVEZ-VOUS POUR ACCÉDER À DES CONSEILS, DES MISES À <br>JOUR ET DES OFFRES SPÉCIALES :</h5>
+      <br>
       <p>
-        <input type="text" name="nom" id="" placeholder="Votre nom">
-      </p><br>
-      <p>
-        <input type="text" name="nom" id="" placeholder="Votre adresse e-mail">
-      </p><br>
-
-      <p>
-        <textarea name="name" rows="5" cols="30" placeholder="Ecrire"></textarea>
+        <input type="text" name="nom" id="champ-mail" placeholder="Votre adresse e-mail">
       </p>
-      <p>
-          <input type="submit" name="submitForm" value="Envoyer">
-        </p>
-      </div>
-
-      <div class="informations">
-        <h5>Informations</h5>
-        <ul>
-          <li> <a href="#">Notre équipe</a> </li>
-          <li> <a href="#">Notre charte qualité</a> </li>
-          <li> <a href="#">Conditions générales de vente</a> </li>
-        </ul>
-      </div>
-
-      <div class="service-client">
-        <h5><a href="#">Service client</a></h5>
-        <ul>
-          <li><a href="#">Contactez-nous</a></li>
-          <li><a href="#">Livraison</a></a>
-          <li><a href="#">Retours</a></li>
-          <li><a href="#">Paiement sécurisé</a></li>
-          <li><a href="#">Condition d'utilisation</a></li>
-        </ul>
       </div>
     </div>
     </form>
   </div>
 
-    <div class="footer1">
-      <div class="div-text-footer">
-        <hr class="hrtop containeur-1">
-        <p class="text-footer">Kid code est la fusion entre éducatif, intuitif, ludique, jouissif et amusant. L'enfant aura la possibilité d'eveiller des compétences et de se  familliariser avec l'un des jouets proposés. </p>
-        <hr class="hrbottom containeur-1">
+        <div class="div-text-footer">
+          <form class="custom-form" action="#" method="post">
+            <h5>VOUS RENCONTREZ UN PROBLEME ? <br>FAITES UNE RECLAMATION:</h5>
+            <p>
+              <input type="text" name="nom" id="" placeholder="Votre nom">
+            </p><br>
+            <p>
+              <textarea name="name" rows="5" cols="30" placeholder="Ecrire"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submitForm" value="Envoyer">
+              </p>
+            </form>
+    <!--<div class="div-text-footer">-->
+        <div class="informations">
+          <h5>A PROPOS DE KID CODE</h5>
+          <ul>
+            <li> <a href="#">Notre équipe</a> </li><br>
+            <li> <a href="#">Notre charte qualité</a> </li> <br>
+            <li> <a href="#">Conditions générales de vente</a> </li>
+          </ul>
+        </div>
+
+        <div class="service-client">
+          <h5><a href="#">SERVICE CLIENT</a></h5>
+          <ul>
+            <li><a href="#">Contactez-nous</a></li><br>
+            <li><a href="#">Livraison</a></li>  <br>
+            <li><a href="#">Paiement sécurisé</a></li> <br>
+            <li><a href="#">Condition d'utilisation</a></li>
+          </ul>
+        </div>  
+        <div class="buy">
+          <h5>S'INFORMER ET ACHETER</h5>
+          <ul>
+            <li><a href="#">Données d'expédition</a></li><br>
+            <li> <a href="#">Retours et garantie</a> </li><br>
+            <li> <a href="#">Appareils compatibles</a> </li>
+
+          </ul>
+        </div>
+
       </div>
+
 
       <div class="footer-3">
 
           <div class="mentions-legales">
             <ul>
-            <li><a href="#">Politique de Confidentialité</a> </li>
-            <li> <a href="#">Mentions légales</a> </li>
-            <li> <a href="#">CGU/CGV</a> </li>
+              <li class="c">&copy 2018 KidCode</li>
+            <li><a href="#">POLITIQUE DE CONFIDENTIALITE</a> </li>
+            <li> <a href="#">CGU/CGV</a>
+            <li> <a href="#">CONDITIONS COMMERCIALES</a> </li> </li>
           </ul>
             </div>
             <div class="top-page">
             <a href="#ancre">Haut de page</a>
+
           </div>
 
       </div>
-    </div>
  </footer>
 
 
